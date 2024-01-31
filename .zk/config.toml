@@ -1,6 +1,6 @@
 [note]
 language = "en"
-filename = "data/{{id}}"
+filename = "{{id}}"
 extension = "md"
 template = "default.md"
 id-charset = "alphanum"
