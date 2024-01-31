@@ -27,11 +27,11 @@ result:
 install: .git/hooks/pre-commit
 
 .git/hooks/pre-commit: .pre-commit-config.yaml
-	pre-commit clean
 	pre-commit install \
 		--hook-type commit-msg \
 		--hook-type pre-push
 
 .PHONY: clean
 clean:
+	pre-commit clean
 	git clean -dfX
