@@ -25,6 +25,7 @@ jobs:
 
       - name: Build the website using emanote 🔧
         run: |
+          mv README.md index.md
           make build
           mv result/ docs/
 
